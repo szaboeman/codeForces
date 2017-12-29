@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    int n,data, min=99999;
+    int n,data, min=9999999999;
     vector<int> v;
     cin>>n;
     for (int i=0; i<n; i++) {
@@ -20,7 +20,7 @@ int main() {
 
 
     }
-    int minDis=9999;
+    int minDis=9999999999;
     for (int i=0; i<v.size()-1; i++) {
         if (minDis>v[i+1]-v[i]) minDis=v[i+1]-v[i];
     }
